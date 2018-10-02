@@ -29,6 +29,14 @@ public:
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
+  /**
+  * a helper function to convert Polar to Cartesian
+  **/
+  static VectorXd ConvertCartesianToPolar(const VectorXd &x_state);
+  /**
+   * a helper function to convert Cartesian to Polar
+   **/
+  static VectorXd ConvertPolarToCartesian(const VectorXd &x_polar);
 };
 
 #endif /* TOOLS_H_ */
